@@ -8,6 +8,9 @@
     <title>Book-Ritual</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../audience/audience.css">
 </head>
 
 <body>
@@ -26,24 +29,26 @@
             只剩一步，成為世界的分享者
         </h4>
 
-        <div class="input-group my-4 w-25">
-            <input type="text" class="form-control rounded-0" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
+        <div class="input-group d-flex flex-column align-items-center" style="">
+            <input type="text" class="form-control rounded-0 my-4" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1" style="width:22%;">
+            <input type="text" class="form-control rounded-0" placeholder="Password" aria-label="Password"
+                aria-describedby="basic-addon1" style="width:22%;">
 
-        <div class="input-group w-25">
-            <input type="text" class="form-control rounded-0" placeholder="Password" aria-label="password"" aria-describedby="basic-addon1">
-        </div>
+            <!-- checkbox -->
+            <div class="checkbox mr-3 mt-4 mb-3">
+                <label class="text-secondary"><input type="checkbox" class="mr-2" value="">Yes, Please email me
+                    suitable reviews</label>
+            </div>
+            <button type="button" class="btn rounded-0 btn-danger" style="width:22%; font-size: 19px;">Sign Up</button>
+            <div class="d-flex mt-4">
+                <img src="../img/fast-signup.png" alt="fast-sign-up" class="d-inline-block mr-2">
+                <i class="fab fa-facebook fa-3x mr-1" style="color:#3c5a99; font-size: 57px;"></i>
+                <i class="fab fa-google-plus-square fa-3x mr-1" style="color:#dc4e41;font-size:57px"></i>
+                <i class="fab fa-twitter-square fa-3x" style="color:#329cea; font-size: 57px;"></i>
+            </div>
 
-        <div class="input-group w-25 my-4">
-            <input type="checkbox" aria-label="Checkbox for following text input">
         </div>
-
-        <!-- <div class="input-group w-25">
-            <input type="text" class="form-control" placeholder="Your username" aria-label="username" aria-describedby="basic-addon2">
-        </div>
-        <div class="input-group w-25">
-            <input type="text" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon2">
-        </div> -->
 
     </div>
 
