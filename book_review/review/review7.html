@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book-Ritual</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    <style>
+        .user-icon-container {
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .user-text {
+            display: block;
+            font-size: 14px;
+        }
+
+        .book-pic {
+            max-width: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        .user-rating {}
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar with logo image and search-->
+    <nav class="navbar navbar-light bg-tranparent border-bottom pt-3">
+        <div class="container">
+            <a class="navbar-brand" href="./audience-1(landing_page).html">
+                <img src="../img/book-ritual-logo.png" class="d-inline-block align-top" alt="book-ritual">
+            </a>
+
+            <!-- Search tool -->
+            <!-- <form class="form-inline mr-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+            <div class="ml-auto">
+                <div class="user-icon-container align-middle mr-3">
+                    <span><i class="fas fa-user-circle fa-lg"></i></span>
+                    <span class="user-text">Jimmy</span>
+                </div>
+                <button type="button" class="btn btn-warning text-white mr-1 align-middle">Review</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- collection of reviews for a specific book -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 text-center mt-3">
+                <h3>優秀的綿羊</h3>
+                <img class="book-pic" src="sheep.jpg" alt="Excellent Sheep">
+                <canvas id="myChart" class="mt-4" style="height: 200px; width:150px"></canvas>
+            </div>
+
+
+            <div class="col-md-8 mt-4">
+                <div class="row">
+                    <div class="col-md-6 my-4">
+                        <div class="card-body text-left text-muted py-0" style="font-size:18px;">
+
+                            <div class="user-rating d-flex justify-content-center">
+                                <div class="user-icon-container align-middle mr-3">
+                                    <span><i class="far fa-user-circle fa-lg"></i></span>
+                                    <span class="user-text">Aaron</span>
+                                </div>
+                                <span><i class="fas fa-lightbulb fa-2x align-middle"></i></span>
+                                <div style="vertical-align: middle"><span class="ml-3 align-middle">Inspiring</span></div>
+                            </div>
+
+                            <p>
+                                <h2 class="position-relative" style="left:12%;">「</h2>
+                            </p>
+
+                            <p class="px-5 ml-4">
+                                雖然這些名校畢業生，外人看來猶如「人生勝利組」，
+
+                                實際上卻也焦慮、膽怯和迷失，茫然無主見、缺乏創新思考，甚至與社會脫節，
+
+                                就像一群優秀的綿羊，只敢順從的朝同一方向前進。
+                            </p>
+
+                            <p>
+                                <h2 class="position-relative" style="left:85%;"> 」</h2>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 my-4">
+                        <div class="card-body text-left text-muted py-0" style="font-size:18px;">
+
+                            <div class="user-rating d-flex justify-content-center">
+                                <div class="user-icon-container align-middle mr-3">
+                                    <span><i class="far fa-user-circle fa-lg"></i></span>
+                                    <span class="user-text">Ken</span>
+                                </div>
+                                <span><i class="fas fa-coffee fa-2x"></i></span>
+                                <div style="vertical-align: middle"><span class="ml-3 align-middle">Warm</span></div>
+                            </div>
+
+                            <p>
+                                <h2 class="position-relative" style="left:12%;">「</h2>
+                            </p>
+                            <p class="px-5 ml-4">
+                                雖然這些名校畢業生，外人看來猶如「人生勝利組」，
+
+                                實際上卻也焦慮、膽怯和迷失，茫然無主見、缺乏創新思考，甚至與社會脫節，
+
+                                就像一群優秀的綿羊，只敢順從的朝同一方向前進。
+
+                            </p>
+
+                            <p>
+                                <h2 class="position-relative" style="left:85%;"> 」</h2>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 my-4 ">
+                        <div class="card-body text-left text-muted py-0" style="font-size:18px;">
+
+                            <div class="user-rating d-flex justify-content-center">
+                                <div class="user-icon-container align-middle mr-3">
+                                    <span><i class="far fa-user-circle fa-lg"></i></span>
+                                    <span class="user-text">Jerry</span>
+                                </div>
+                                <span><i class="fas fa-heart fa-2x"></i></span>
+                                <div style="vertical-align: middle"><span class="ml-3 align-middle">Peaceful</span></div>
+                            </div>
+
+                            <p>
+                                <h2 class="position-relative" style="left:12%;">「</h2>
+                            </p>
+                            <p class="px-5 ml-4">
+                                我長久以來最重視的事情是，「自己因為某種特別的力量，而被賦予寫小說的機會」這坦然的認識。
+
+                                我總算抓住這個機會，並蒙受不少幸運，才能像這樣當上小說家。無論如何，以結果來說，我不知道是誰賦予我這樣的「資格」。
+
+                                對此我唯有衷心感謝，而且對自己被賦予的資格—就像守護受傷的鴿子般—珍惜守護，現在還能像這樣繼續寫小說，我感到非常高興，以後的事以後再說
+
+                            </p>
+
+                            <p>
+                                <h2 class="position-relative" style="left:85%;"> 」</h2>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        Chart.defaults.global.barThickness = 5;
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var chartdata = new Chart(ctx, {
+            type: 'horizontalBar',
+            data: {
+                labels: ["\f004", "CSS", "Bootstrap", "jQuery", "Javascript", "Node.js"],
+                datasets: [{
+                    label: 'Level of Proficiency',
+                    data: [85, 80, 89, 63, 58, 55],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            min: 0,
+                            max: 100,
+                            fontFamily: 'FontAwesome'
+                        }
+                    }]
+                },
+                responsive: true, // default true
+                labels: {
+                    fontSize: 12
+                },
+            }
+        });
+        var inView1 = false;
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var winTop1 = $(window).scrollTop();
+                var winh1 = $(window).height();
+                var objpos1 = $("#myChart").offset().top;
+                if (objpos1 < winTop1 + winh1 * 0.5 && !inView1) {
+                    new Chart(ctx, chartdata);
+                    inView1 = true;
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
