@@ -1,0 +1,15 @@
+#textarea {
+    height: 400px;
+}
+
+.redborder{
+    border: 2px solid rgba(194, 17, 17, 0.966);
+}
+
+.blueword{
+    color: #3c5a99;
+} 
+
+.redword{
+    color: rgba(194, 17, 17, 0.966);
+}

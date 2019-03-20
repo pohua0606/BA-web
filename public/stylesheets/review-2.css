@@ -1,0 +1,57 @@
+.user-icon-container {
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px;
+
+}
+
+.user-text {
+    display: block;
+    font-size: 18px;
+}
+
+.feeling {
+    margin-top: 8%;
+}
+
+.icon-width {
+    width: 80px;
+}
+
+.icon-color {
+    color: #7c7574;
+}
+
+#inspire:hover {
+    color: #ff9900;
+    transition: 0.2s ease-in;
+}
+
+#warm:hover {
+    color: #f66367;
+    transition: 0.2s ease-in;
+}
+
+#fun:hover {
+    color: #008cff;
+    transition: 0.2s ease-in;
+}
+
+#knowledge:hover {
+    color: #0a7e1a;
+    transition: 0.2s ease-in;
+}
+
+#peace:hover {
+    color: #913d17;
+    transition: 0.2s ease-in;
+}
+
+#bored:hover {
+    color: rgb(31, 30, 30);
+    transition: 0.2s ease-in;
+}
+
+.pointer {
+    cursor: pointer;
+}

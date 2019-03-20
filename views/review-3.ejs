@@ -1,0 +1,28 @@
+<% layout('title_layout') -%>
+<% stylesheet('/stylesheets/review-3.css') -%>
+<% script('/javascripts/review-3.js') -%>
+<style>
+
+    .redborder{
+        border: 2px solid rgba(194, 17, 17, 0.966);
+    }
+
+</style>
+<section class="p-3 contianer">
+    <div class="row h-80">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="mt-5 mb-1 text-center" style="font-size:1.5rem">書中最喜歡的話語文字或想分享的原因：</div>
+            <div id="remindword" class="text-right mr-4 mb-3 font-weight-bold blueword" style="font-size:0.5rem;"><i>200字以下</i></div>
+            <form>
+                <div class="form-group">
+                    <textarea id="textarea" class="form-control col-11 ml-3" id="exampleFormControlTextarea1" rows="20"
+                        placeholder="最喜歡的話語是...，想分享的原因是..."></textarea>
+                </div>
+            </form>
+            <button id="next" type="button" class="btn btn-primary mt-3 mr-3" style="float:right">下一步</button>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+</section>
